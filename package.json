@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce-mern",
+  "version": "1.0.0",
+  "description": "MERN Ecommerce bigElectronic",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Wase Mekonen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
