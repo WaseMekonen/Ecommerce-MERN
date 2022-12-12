@@ -4,11 +4,11 @@ mongoose.set("strictQuery", false);
 
 const connectDB = async () => {
   try {
-    const connect = await mongoose.connect(process.env.MONGO_URI, {
+    const conn = await mongoose.connect(process.env.MONGO_URI, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
-    console.log(`MongoDb connected: ${connect.connection.host}`.cyan.underline);
+    console.log(`MongoDb connected: ${conn.connection.host}`.cyan.underline);
   } catch (error) {
     console.error(`Error:${error.message}`.red.underline.bold);
     process.exit(1);
